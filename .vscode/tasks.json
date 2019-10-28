@@ -1,0 +1,30 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build",
+            "type": "shell",
+            "command": "g++",
+            "args": [
+               "-g",
+               "-o",
+               "main.exe",
+               "*.cpp",
+               "-std=c++17",
+               "-I/usr/include/",
+               "-lsfml-graphics",
+               "-lsfml-window",
+                "-lsfml-system"
+            ],
+            "group": "build",
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": true,
+                "panel": "shared",
+                "showReuseMessage": true,
+                "clear": false
+            },
+        }
+    ]
+}
